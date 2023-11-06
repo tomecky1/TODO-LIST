@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.7;
-    background-color: #ccc;
+    background-color: #f2f2f2;
     padding: 30px;
 }
 
@@ -19,13 +19,38 @@ body {
     margin: 0 auto;
 }
 
-.grid__wrapper {
+.grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);    
     background-color: #fff;
-    border: 1px solid #000;
+}
+
+.grid__item {
     padding: 20px;
-    
+}
+
+.grid__item--h3 {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input {    
+    border: 3px solid #f2f2f2;
+    width: 82%;
+}
+
+.form__button {
+    border: none;
+    background-color: teal;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
 }
