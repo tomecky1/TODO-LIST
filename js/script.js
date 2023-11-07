@@ -36,10 +36,10 @@
     let htmlString = "";
     for (const task of tasks) {
       htmlString = htmlString += `
-            <li ${task.done ? 'style="text-decoration: line-through"' : ""}>
-            <button class="js-done">zrobione?</button> 
-            <button class="js-remove">Usuń zadanie</button>    
-            ${task.content}
+            <li class="list__li"${task.done ? 'style="text-decoration: line-through"' : ""}>
+            <button class="js-done list__item">zrobione?</button>              
+            <span class="list__item">${task.content}</span>
+            <button class="js-remove list__item">Usuń zadanie</button>  
             </li>
             `;
     }
