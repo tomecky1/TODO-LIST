@@ -37,9 +37,9 @@
     for (const task of tasks) {
       htmlString = htmlString += `
             <li class="list__li"${task.done ? 'style="text-decoration: line-through"' : ""}>
-            <button class="js-done list__item">zrobione?</button>              
+            <button class="js-done buttonCheck">zrobione?</button>              
             <span class="list__item">${task.content}</span>
-            <button class="js-remove list__item">Usuń zadanie</button>  
+            <button class="js-remove buttonRemove">🗑️</button>  
             </li>
             `;
     }
