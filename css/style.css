@@ -79,6 +79,10 @@ body {
     flex-wrap: wrap;
 }
 
+.list__item--done {
+    text-decoration: line-through;
+}
+
 .buttonRemove {
     border: none;
     background-color: crimson;
