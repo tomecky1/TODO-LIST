@@ -73,10 +73,12 @@ body {
 .list__li {
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
     border: none;
     background-color: #fff;
     flex-wrap: wrap;
+    border-bottom: 3px solid #f2f2f2;
+    padding: 20px 20px;
 }
 
 .list__item--done {
@@ -86,6 +88,15 @@ body {
 .buttonRemove {
     border: none;
     background-color: crimson;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.buttonCheck {
+    border: none;
+    background-color: green;
     color: #fff;
     font-weight: 700;
     padding: 10px 10px;
