@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -103,6 +103,24 @@ body {
     cursor: pointer;
 }
 
-/* .buttonChecked {
-    display: none;
-} */
+@media (max-width: 767px){
+    .form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .form__button {
+        margin-top: 30px;
+        border: none;
+        background-color: teal;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .form__input {    
+        border: 2px solid #f2f2f2;
+        flex-basis: 100%;
+    }
+}
