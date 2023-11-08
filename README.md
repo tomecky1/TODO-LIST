@@ -4,10 +4,10 @@
 [WEBSITE-PREVIEW](https://tomecky1.github.io/TODO-LIST/)
 
 ### DESCRIPTION
-This my first very basic to-do list, still in development [IN-PROGRESS]
+This my first very basic to-do list, still in development [DONE]
 
 **things to do:**
-- Add some nice styling to the site but nothing fancy [IN-PROGRESS]
+- Add some nice styling to the site but nothing fancy [DONE]
 
 
 *technology used in the project includes:*
