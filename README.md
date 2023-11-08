@@ -1,4 +1,5 @@
 # TO-DO List
+![PAGE SCREENSHOT](/images/screen.png "TO-DO list")
 
 ## Demo
 [WEBSITE-PREVIEW](https://tomecky1.github.io/TODO-LIST/)
