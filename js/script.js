@@ -27,8 +27,6 @@
     toggleDoneButtons.forEach((toggleDoneButtons, index) => {
       toggleDoneButtons.addEventListener("click", () => {
         toggleTaskDone(index);
-        toggleDoneButtons.innerHTML = "✔️";
-
         render();
       });
     });
@@ -39,7 +37,9 @@
     for (const task of tasks) {
       htmlString = htmlString += `
             <li class="list__li">
-            <button class="js-done buttonCheck">${task.done ? "✔️" : ""}</button>            
+            <button class="js-done buttonCheck">${
+              task.done ? "✔️" : ""
+            }</button>            
             <span class="list__item ${task.done ? "list__item--done" : ""}">${
         task.content
       }</span>
