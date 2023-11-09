@@ -13,6 +13,7 @@
   const toggleTaskDone = (index) => {
     tasks[index].done = !tasks[index].done;
     render();
+    
   };
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");

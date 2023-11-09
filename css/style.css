@@ -19,7 +19,11 @@ body {
     margin: 0 auto;
 }
 
-h1, h3 {
+.container_title {
+    padding: 20px;
+}
+
+.section__header {
     padding: 20px;
 }
 
