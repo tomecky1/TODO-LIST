@@ -1,5 +1,5 @@
 {
-  const tasks = [
+  let tasks = [
     {
       content: "Zrobić zakupy",
       done: false,
@@ -11,7 +11,15 @@
   ];
 
   const toggleTaskDone = (index) => {
-    tasks[index].done = !tasks[index].done;
+    tasks = tasks.map((task, taskIndex) => {
+      if (taskIndex === index) {
+        return {
+          ...task,
+          done: !task.done,
+        };
+      }
+      return task;
+    });
     render();
     
   };
@@ -19,7 +27,7 @@
     const removeButtons = document.querySelectorAll(".js-remove");
     removeButtons.forEach((removeButton, index) => {
       removeButton.addEventListener("click", () => {
-        tasks.splice(index, 1);
+        tasks = [...tasks.slice(0, index), ...tasks.slice(index + 1)];
         render();
       });
     });
@@ -60,9 +68,12 @@
     addNewTask(newTaskContent);
   };
   const addNewTask = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-    });
+    tasks = [
+      ...tasks,
+      {
+        content: newTaskContent,
+      },
+    ];
     render();
   };
   const init = () => {
