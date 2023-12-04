@@ -10,7 +10,7 @@ This my first very basic to-do list, still in development [DONE]
 **things to do:**
 - Add some nice styling to the site but nothing fancy [DONE]
 - Add code rafactoring with Immutability to js [DONE]
-- Add 2 buttons [IN-PROGRESS]
+- Add 2 buttons [DONE]
 - Add colors transitions to the buttons in css [IN-PROGRESS]
 - Add transform to "Dodaj zadanie" button [IN-PROGRESS]
 
