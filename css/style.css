@@ -53,6 +53,7 @@ body {
 .todoList__flex {
     display: flex;
     flex-wrap: wrap;
+    transition: 1s;
 }
 
 .section__header--flexItem1 {
@@ -74,7 +75,8 @@ body {
 
 .list {
     padding: 0;
-    text-align:left ;
+    text-align:left;
+    transition: 1s;
 }
 
 .list__li {
@@ -102,6 +104,10 @@ body {
     cursor: pointer;
 }
 
+.buttonRemove:hover {
+    background-color: #ff0000;
+}
+
 .buttonCheck {
     width: 40px;
     height: 40px;
@@ -112,6 +118,11 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+.buttonCheck:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
 
 @media (max-width: 767px){
     .form {

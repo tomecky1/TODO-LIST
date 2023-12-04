@@ -10,9 +10,9 @@ This my first very basic to-do list, still in development [DONE]
 **things to do:**
 - Add some nice styling to the site but nothing fancy [DONE]
 - Add code rafactoring with Immutability to js [DONE]
-- Add 2 buttons [DONE]
-- Add colors transitions to the buttons in css [IN-PROGRESS]
-- Add transform to "Dodaj zadanie" button [IN-PROGRESS]
+- Add 2 buttons with logic [IN-PROGRESS]
+- Add colors transitions to the buttons in css [DONE]
+- Add transform to "Dodaj zadanie" button [DONE]
 
 *technology used in the project includes:*
 1. HTML 5

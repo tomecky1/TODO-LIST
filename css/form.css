@@ -1,6 +1,7 @@
 .form {
     display: flex;
     justify-content: space-between;
+    transition: 1s;
 }
 
 .form__input {    
@@ -10,9 +11,14 @@
 
 .form__button {
     border: none;
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: #fff;
     font-weight: 700;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.form__button:hover {
+    transform: scale(1.1);
+    background-color: hsl(180, 100%, 35%);
 }
