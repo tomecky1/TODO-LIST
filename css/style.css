@@ -50,6 +50,28 @@ body {
     background-color: #fff;
 }
 
+.todoList__flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__header--flexItem1 {
+    flex-grow: 2;
+}
+
+.todoList__button--flexItem2 {
+    flex-grow: 1;
+    border: 0;
+    color: teal;
+    background-color: #fff;
+}
+
+.todoList__button--flexItem3 {
+    border: 0;
+    color: teal;
+    background-color: #fff;
+}
+
 .list {
     padding: 0;
     text-align:left ;
