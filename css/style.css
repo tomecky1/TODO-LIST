@@ -67,10 +67,18 @@ body {
     background-color: #fff;
 }
 
+.todoList__button--flexItem2:hover {
+    color: hsl(180, 100%, 35%);
+}
+
 .todoList__button--flexItem3 {
     border: 0;
     color: teal;
     background-color: #fff;
+}
+
+.todoList__button--flexItem3:hover {
+    color: hsl(180, 100%, 35%);
 }
 
 .list {
