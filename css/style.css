@@ -52,6 +52,7 @@ body {
 
 .todoList__flex {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     transition: 1s;
 }

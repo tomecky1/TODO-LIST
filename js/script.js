@@ -59,6 +59,18 @@
 
     bindEvents();
   };
+
+  const renderButtons = () => {    
+      document.querySelector(".js-buttons").innerHTML = `
+      <button class="todoList__button--flexItem2 js-hideDoneTasks">Ukryj ukończone</button>
+      <button class="todoList__button--flexItem3 js-doneAllTasks">Ukończ wszystkie</button>
+      `;
+      
+      bindButtonsEvents();
+   };
+
+  const bindButtonsEvents = () => { };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     const newTaskContent = document.querySelector(".js-input").value.trim();
@@ -78,6 +90,7 @@
   };
   const init = () => {
     render();
+    renderButtons();
     const form = document.querySelector(".js-form");
     form.addEventListener("submit", onFormSubmit);
   };
