@@ -102,9 +102,9 @@ body {
     text-decoration: line-through;
 }
 
-/* .tasks__item--hidden {
+.tasks__item--hidden {
     display: none;
-}    */
+}   
 
 .buttonRemove {
     width: 40px;

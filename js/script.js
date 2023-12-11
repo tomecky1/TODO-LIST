@@ -23,7 +23,7 @@
       return task;
     });
     render();
-    
+
   };
 
   const doneAllTasks = () => {
@@ -60,37 +60,37 @@
   const renderTasks = () => {
     let tasksListHTMLContent = "";
     for (const task of tasks) {
+      if (hideDoneTasks && task.done) {
+        continue; // Skip rendering the task if it is done and hideDoneTasks is true
+      }
       tasksListHTMLContent += `
-            <li class="list__li tasks__item--hidden">
-            <button class="js-done buttonCheck">${task.done ? "✔️" : ""
-        }</button>            
-            <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content
-        }</span>
-            <button class="js-remove buttonRemove">🗑️</button>  
-            </li>
-            `;
+        <li class="list__li ">
+          <button class="js-done buttonCheck">${task.done ? "✅" : ""}</button>            
+          <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
+          <button class="js-remove buttonRemove">🗑️</button>  
+        </li>
+      `;
     }
 
     document.querySelector(".js-list").innerHTML = tasksListHTMLContent;
   };
 
-  const renderButtons = () => {    
-      const buttonsElement = document.querySelector(".js-buttons");
-      if (tasks.length > 0) {
-        buttonsElement.innerHTML = `
+  const renderButtons = () => {
+    const buttonsElement = document.querySelector(".js-buttons");
+    if (tasks.length > 0) {
+      buttonsElement.innerHTML = `
         <button class="js-hideDoneTasks buttonHideDoneTasks">
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
-        <button class="js-doneAllTasks buttonDoneAllTasks" ${
-          tasks.every(({ done }) => done) ? "disabled" : ""
+        <button class="js-doneAllTasks buttonDoneAllTasks" ${tasks.every(({ done }) => done) ? "disabled" : ""
         }>
         Ukończ wszystkie
         </button>
         `;
-      } else {
-        buttonsElement.innerHTML = "";
-      }
-   };
+    } else {
+      buttonsElement.innerHTML = "";
+    }
+  };
 
   const bindButtonsEvents = () => {
     const hideDoneTasksButton = document.querySelector(".js-hideDoneTasks");
@@ -103,7 +103,7 @@
       doneAllTasks();
       render();
     });
-   };
+  };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -131,7 +131,7 @@
   };
 
   const init = () => {
-    render();    
+    render();
     const form = document.querySelector(".js-form");
     form.addEventListener("submit", onFormSubmit);
   };
