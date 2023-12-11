@@ -26,7 +26,7 @@
 
   };
 
-  const doneAllTasks = () => {
+  const markAllTasksDone = () => {
     tasks = tasks.map((task) => ({
       ...task,
       done: true,
@@ -34,7 +34,7 @@
     render();
   };
 
-  const showHideDoneTasks = () => {
+  const toggleHideDoneTasks = () => {
     hideDoneTasks = !hideDoneTasks;
     render();
   }
@@ -65,7 +65,7 @@
       }
       tasksListHTMLContent += `
         <li class="list__li ">
-          <button class="js-done buttonCheck">${task.done ? "✅" : ""}</button>            
+          <button class="js-done buttonCheck">${task.done ? "✔️" : ""}</button>            
           <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
           <button class="js-remove buttonRemove">🗑️</button>  
         </li>
@@ -96,11 +96,11 @@
     const hideDoneTasksButton = document.querySelector(".js-hideDoneTasks");
     const doneAllTasksButton = document.querySelector(".js-doneAllTasks");
     hideDoneTasksButton.addEventListener("click", () => {
-      showHideDoneTasks();
+      toggleHideDoneTasks();
       render();
     });
     doneAllTasksButton.addEventListener("click", () => {
-      doneAllTasks();
+      markAllTasksDone();
       render();
     });
   };

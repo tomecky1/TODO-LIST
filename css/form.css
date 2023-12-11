@@ -1,7 +1,6 @@
 .form {
     display: flex;
     justify-content: space-between;
-    transition: 1s;
 }
 
 .form__input {    
@@ -16,6 +15,7 @@
     font-weight: 700;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 1.5s all;
 }
 
 .form__button:hover {

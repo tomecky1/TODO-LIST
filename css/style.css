@@ -19,11 +19,11 @@ body {
     margin: 0 auto;
 }
 
-.container_title {
+.header {
     padding: 20px;
 }
 
-.section__header {
+.section__title {
     padding: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
     padding: 20px;
 }
 
-.grid__item--h3 {
+.grid__item--h2 {
     margin: 0;
     padding: 20px;
     border-bottom: 3px solid #f2f2f2;
@@ -54,10 +54,9 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    transition: 1s;
 }
 
-.section__header--flexItem1 {
+.section__title--flexItem1 {
     flex-grow: 2;
 }
 
@@ -66,20 +65,27 @@ body {
     border: 0;
     color: teal;
     background-color: #fff;
+    transition: 1.5s all;
 }
 
 .buttonHideDoneTasks:hover {
     color: hsl(180, 100%, 35%);
 }
 
-/* .buttonDoneAllTasks {
+.buttonDoneAllTasks {
+    flex-grow: 1;
     border: 0;
     color: teal;
     background-color: #fff;
-} */
+    transition: 1.5s all;
+}
 
 .buttonDoneAllTasks:hover {
     color: hsl(180, 100%, 35%);
+}
+
+.buttonDoneAllTasks:disabled {
+    display: none;
 }
 
 .list {
