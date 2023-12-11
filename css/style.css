@@ -61,24 +61,24 @@ body {
     flex-grow: 2;
 }
 
-.todoList__button--flexItem2 {
+.buttonHideDoneTasks {
     flex-grow: 1;
     border: 0;
     color: teal;
     background-color: #fff;
 }
 
-.todoList__button--flexItem2:hover {
+.buttonHideDoneTasks:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.todoList__button--flexItem3 {
+/* .buttonDoneAllTasks {
     border: 0;
     color: teal;
     background-color: #fff;
-}
+} */
 
-.todoList__button--flexItem3:hover {
+.buttonDoneAllTasks:hover {
     color: hsl(180, 100%, 35%);
 }
 
@@ -101,6 +101,10 @@ body {
 .list__item--done {
     text-decoration: line-through;
 }
+
+/* .tasks__item--hidden {
+    display: none;
+}    */
 
 .buttonRemove {
     width: 40px;
