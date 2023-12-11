@@ -164,4 +164,8 @@ body {
         flex-wrap: wrap;
         transition: 1s;
     }
+
+    .js-buttons {
+        text-align: center;
+    }
 }
