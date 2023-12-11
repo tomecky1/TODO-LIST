@@ -17,6 +17,7 @@ This my first very basic to-do list, still in development [DONE]
 - Add 2 buttons with logic [DONE]
 - Add colors transitions to the buttons in css [DONE]
 - Add transform to "Dodaj zadanie" button [DONE]
+- Add RWD implementation for smaller displays [DONE]
 
 _technology used in the project includes:_
 
