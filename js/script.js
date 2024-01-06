@@ -64,9 +64,9 @@
         continue; // Skip rendering the task if it is done and hideDoneTasks is true
       }
       tasksListHTMLContent += `
-        <li class="list__li ">
+        <li class="list__item">
           <button class="js-done buttonCheck">${task.done ? "✔️" : ""}</button>            
-          <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
+          <span class="list__item--span ${task.done ? "list__item--done" : ""}">${task.content}</span>
           <button class="js-remove buttonRemove">🗑️</button>  
         </li>
       `;
