@@ -6,6 +6,7 @@
 .form__input {    
     border: 2px solid #f2f2f2;
     width: 82%;
+    height: 40px;
 }
 
 .form__button {
@@ -16,6 +17,7 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: 1.5s all;
+    height: 40px;
 }
 
 .form__button:hover {
